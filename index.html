@@ -3,87 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ExploreX Travel Agency</title>
+  <title>GlobeTrek ✈️ | Travel Agency</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1 class="logo">ExploreX</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#offers">Offers</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>🌍 GlobeTrek</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Your Journey Begins Here</h2>
-      <p>Discover amazing destinations and exclusive travel packages tailored just for you.</p>
-      <a href="#destinations" class="btn">Explore Now</a>
-    </div>
-  </section>
+  <header id="home" class="hero">
+    <h2>Explore the World with Ease</h2>
+    <p>Your adventure begins here — discover top cities and travel deals today!</p>
+    <button id="exploreBtn">Start Exploring</button>
+  </header>
 
-  <!-- Destinations -->
+  <!-- Destinations Section -->
   <section id="destinations" class="destinations">
     <h2>Popular Destinations</h2>
-    <div class="destinations-grid">
-      <div class="card">
-        <img src="images/destination1.jpg" alt="Paris">
-        <h3>Paris</h3>
-        <p>City of Lights & Love</p>
+    <div class="destination-grid" id="destinationGrid">
+      <!-- Cities will load dynamically -->
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="packages">
+    <h2>Special Travel Packages</h2>
+    <div class="package-grid">
+      <div class="package-card">
+        <h3>European Escape</h3>
+        <p>7 days in Paris, Rome & Barcelona</p>
+        <p class="price">$1299</p>
       </div>
-      <div class="card">
-        <img src="images/destination2.jpg" alt="Bali">
-        <h3>Bali</h3>
-        <p>Tropical Paradise</p>
+      <div class="package-card">
+        <h3>Asian Adventure</h3>
+        <p>10 days in Bangkok, Tokyo & Bali</p>
+        <p class="price">$1599</p>
       </div>
-      <div class="card">
-        <img src="images/destination3.jpg" alt="New York">
-        <h3>New York</h3>
-        <p>The City That Never Sleeps</p>
+      <div class="package-card">
+        <h3>African Safari</h3>
+        <p>8 days in Nairobi & Serengeti</p>
+        <p class="price">$1399</p>
       </div>
     </div>
   </section>
 
-  <!-- Offers -->
-  <section id="offers" class="offers">
-    <h2>Special Offers</h2>
-    <div class="offers-grid">
-      <div class="offer-card">
-        <img src="images/offer1.jpg" alt="Summer Offer">
-        <h3>Summer Escape - 30% Off</h3>
-        <p>Enjoy the best summer destinations at unbeatable prices.</p>
-      </div>
-      <div class="offer-card">
-        <img src="images/offer2.jpg" alt="Adventure Offer">
-        <h3>Adventure Awaits</h3>
-        <p>Experience thrilling adventures around the world.</p>
-      </div>
-      <div class="offer-card">
-        <img src="images/offer3.jpg" alt="Luxury Offer">
-        <h3>Luxury Getaway</h3>
-        <p>Indulge in 5-star experiences at top destinations.</p>
-      </div>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Got questions? We’re here to help plan your next journey!</p>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <!-- Footer -->
-  <footer id="contact">
-    <div class="footer-container">
-      <p>&copy; 2025 ExploreX Travel Agency | All Rights Reserved</p>
-      <div class="socials">
-        <a href="#">🌐</a>
-        <a href="#">📧</a>
-        <a href="#">📸</a>
-      </div>
+  <footer class="footer">
+    <p>&copy; 2025 GlobeTrek Travel Agency. All Rights Reserved.</p>
+    <div class="socials">
+      <a href="#" target="_blank" rel="noopener" title="LinkedIn">🔗</a>
+      <a href="#" target="_blank" rel="noopener" title="GitHub">💻</a>
+      <a href="mailto:info@globetrek.com" title="Email">📧</a>
     </div>
   </footer>
 
